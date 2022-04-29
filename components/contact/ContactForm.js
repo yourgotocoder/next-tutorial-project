@@ -46,6 +46,9 @@ const ContactForm = () => {
                 name: nameState,
             });
             setRequestStatus("success");
+            setEmailState("");
+            setNameState("");
+            setMessageState("");
         } catch (err) {
             setRequestError(err.message);
             setRequestStatus("error");
