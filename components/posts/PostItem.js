@@ -26,6 +26,7 @@ const PostItem = (props) => {
                             alt={excerpt}
                             width={300}
                             height={200}
+                            layout="responsive"
                         />
                     </div>
                     <div className={classes.content}>
