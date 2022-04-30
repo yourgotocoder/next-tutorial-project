@@ -22,9 +22,7 @@ async function handler(req, res) {
 
         try {
             console.log(process.env.DB_USER);
-            client = await MongoClient.connect(
-                `mongodb+srv://sudu:Da4X82MiXRuUdyD4@mean.r3iag.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
-            );
+            client = await MongoClient.connect(connectionStrintg);
         } catch (err) {
             res.status(500).json({ message: "Could not connect to database" });
             return;
