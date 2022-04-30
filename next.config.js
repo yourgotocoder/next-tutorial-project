@@ -1,23 +1,23 @@
-const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
+const { PHASE_DEVELOPMENT_SERVER } = require("next/constants");
 
 module.exports = (phase) => {
-  if (phase === PHASE_DEVELOPMENT_SERVER) {
-    return {
-      env: {
-        mongodb_username: 'maximilian',
-        mongodb_password: '2YkcXq43KyPk0vqp',
-        mongodb_clustername: 'cluster0',
-        mongodb_database: 'my-site-dev',
-      },
-    };
-  }
+    if (phase === PHASE_DEVELOPMENT_SERVER) {
+        return {
+            env: {
+                mongodb_username: "sudu",
+                mongodb_password: "Da4X82MiXRuUdyD4",
+                mongodb_clustername: "mean",
+                mongodb_database: "contact",
+            },
+        };
+    }
 
-  return {
-    env: {
-      mongodb_username: 'maximilian',
-      mongodb_password: '2YkcXq43KyPk0vqp',
-      mongodb_clustername: 'cluster0',
-      mongodb_database: 'my-site',
-    },
-  };
+    return {
+        env: {
+            mongodb_username: "sudu",
+            mongodb_password: "Da4X82MiXRuUdyD4",
+            mongodb_clustername: "mean",
+            mongodb_database: "contact",
+        },
+    };
 };
